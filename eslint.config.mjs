@@ -13,7 +13,7 @@ const compat = new FlatCompat({
 const eslintConfig = defineConfig([
   ...nextVitals,
   ...nextTs,
-  ...compat.extends("standard"),
+  ...compat.extends("standard", "prettier"),
   {
     ...tailwindcss.configs.recommended,
     settings: {
